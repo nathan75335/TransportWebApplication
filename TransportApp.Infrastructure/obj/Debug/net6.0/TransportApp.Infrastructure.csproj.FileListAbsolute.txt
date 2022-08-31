@@ -1,0 +1,17 @@
+C:\Users\josh4\OneDrive\Documents\TransportApp.Infrastructure\bin\Debug\net6.0\TransportApp.Infrastructure.deps.json
+C:\Users\josh4\OneDrive\Documents\TransportApp.Infrastructure\bin\Debug\net6.0\TransportApp.Infrastructure.dll
+C:\Users\josh4\OneDrive\Documents\TransportApp.Infrastructure\bin\Debug\net6.0\TransportApp.Infrastructure.pdb
+C:\Users\josh4\OneDrive\Documents\TransportApp.Infrastructure\bin\Debug\net6.0\TransportApp.Domain.dll
+C:\Users\josh4\OneDrive\Documents\TransportApp.Infrastructure\bin\Debug\net6.0\TransportAppApplication.dll
+C:\Users\josh4\OneDrive\Documents\TransportApp.Infrastructure\bin\Debug\net6.0\TransportAppApplication.pdb
+C:\Users\josh4\OneDrive\Documents\TransportApp.Infrastructure\bin\Debug\net6.0\TransportApp.Domain.pdb
+C:\Users\josh4\OneDrive\Documents\TransportApp.Infrastructure\obj\Debug\net6.0\TransportApp.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\josh4\OneDrive\Documents\TransportApp.Infrastructure\obj\Debug\net6.0\TransportApp.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\josh4\OneDrive\Documents\TransportApp.Infrastructure\obj\Debug\net6.0\TransportApp.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\josh4\OneDrive\Documents\TransportApp.Infrastructure\obj\Debug\net6.0\TransportApp.Infrastructure.AssemblyInfo.cs
+C:\Users\josh4\OneDrive\Documents\TransportApp.Infrastructure\obj\Debug\net6.0\TransportApp.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\josh4\OneDrive\Documents\TransportApp.Infrastructure\obj\Debug\net6.0\TransportApp.Infrastructure.csproj.CopyComplete
+C:\Users\josh4\OneDrive\Documents\TransportApp.Infrastructure\obj\Debug\net6.0\TransportApp.Infrastructure.dll
+C:\Users\josh4\OneDrive\Documents\TransportApp.Infrastructure\obj\Debug\net6.0\refint\TransportApp.Infrastructure.dll
+C:\Users\josh4\OneDrive\Documents\TransportApp.Infrastructure\obj\Debug\net6.0\TransportApp.Infrastructure.pdb
+C:\Users\josh4\OneDrive\Documents\TransportApp.Infrastructure\obj\Debug\net6.0\ref\TransportApp.Infrastructure.dll

@@ -1,0 +1,12 @@
+C:\Users\josh4\OneDrive\Documents\TransportWebApp\TransportApp.Domain\bin\Debug\net6.0\TransportApp.Domain.deps.json
+C:\Users\josh4\OneDrive\Documents\TransportWebApp\TransportApp.Domain\bin\Debug\net6.0\TransportApp.Domain.dll
+C:\Users\josh4\OneDrive\Documents\TransportWebApp\TransportApp.Domain\bin\Debug\net6.0\TransportApp.Domain.pdb
+C:\Users\josh4\OneDrive\Documents\TransportWebApp\TransportApp.Domain\obj\Debug\net6.0\TransportApp.Domain.csproj.AssemblyReference.cache
+C:\Users\josh4\OneDrive\Documents\TransportWebApp\TransportApp.Domain\obj\Debug\net6.0\TransportApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\josh4\OneDrive\Documents\TransportWebApp\TransportApp.Domain\obj\Debug\net6.0\TransportApp.Domain.AssemblyInfoInputs.cache
+C:\Users\josh4\OneDrive\Documents\TransportWebApp\TransportApp.Domain\obj\Debug\net6.0\TransportApp.Domain.AssemblyInfo.cs
+C:\Users\josh4\OneDrive\Documents\TransportWebApp\TransportApp.Domain\obj\Debug\net6.0\TransportApp.Domain.csproj.CoreCompileInputs.cache
+C:\Users\josh4\OneDrive\Documents\TransportWebApp\TransportApp.Domain\obj\Debug\net6.0\TransportApp.Domain.dll
+C:\Users\josh4\OneDrive\Documents\TransportWebApp\TransportApp.Domain\obj\Debug\net6.0\refint\TransportApp.Domain.dll
+C:\Users\josh4\OneDrive\Documents\TransportWebApp\TransportApp.Domain\obj\Debug\net6.0\TransportApp.Domain.pdb
+C:\Users\josh4\OneDrive\Documents\TransportWebApp\TransportApp.Domain\obj\Debug\net6.0\ref\TransportApp.Domain.dll
