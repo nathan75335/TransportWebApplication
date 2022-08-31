@@ -38,7 +38,7 @@ namespace TransportApp.Infrastructure.Repositories
 
         public async Task<List<Street>> GetListStreetAsync()
         {
-            var street = await  _db.Streets.ToListAsync();
+            var street = await  _db.Streets.Include(x => x.House).ToListAsync();
             if(street != null)
             {
                 return street;
