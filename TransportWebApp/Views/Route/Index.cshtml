@@ -1,0 +1,47 @@
+﻿@model List<TransportApp.Domain.Route>
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary">The Book Library</h2>
+        </div>
+        <div class="col-6 d-flex p-2 justify-content-end">
+            <a asp-controller="Route" asp-action="Index" class="btn btn-info d-flex p-2 justify-content-end">
+                <i class="bi bi-plus-circle pl-1"></i>&nbsp;Create New Book
+            </a>
+            
+        </div>
+    </div>
+</div>
+<hr class="bg-primary"/>
+<table class="table table-bordered table-striped" style="width:100%;">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name Of Route</th>
+            <th>BusStops</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody >
+        @foreach(var route in Model){
+            <tr>
+                <td >@route.Id</td>
+                <td >@route.Name</td>
+                <td ><a class="btn btn-primary" asp-controller="BusStop" asp-action="Index">BusStops</a></td>
+                <td>
+                    <div class="w-75 btn-group" role="group">
+                        <a asp-controller="Route" asp-action="Edit" class="btn btn-primary" asp-route-id="@route.Id">
+                            <i class="bi bi-pencil-square"></i>&nbsp;Edit
+                        </a>
+                        <a asp-controller="Route" asp-action="Delete" class="btn btn-danger" asp-route-id="@route.Id">
+                            <i class="bi bi-trash3-fill"></i>&nbsp;Delete
+                        </a>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
