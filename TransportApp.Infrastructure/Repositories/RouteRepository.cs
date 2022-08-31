@@ -36,7 +36,9 @@ namespace TransportApp.Infrastructure.Repositories
 
         public async Task<List<Route>> GetListRouteAsync()
         {
-            var routes = await _db.Routes.Include(x => x.BusStop).ThenInclude(x => x.Street).ToListAsync();
+            var routes = await _db.Routes.Include(x => x.BusStop)
+                .ThenInclude(x => x.Street).ThenInclude(x => x.House)
+                .ToListAsync();
             if (routes != null)
             {
                 return routes;
@@ -56,7 +58,9 @@ namespace TransportApp.Infrastructure.Repositories
 
         public async Task<Route> GetRouteByIdAsync(int id)
         {
-            var busStop = await _db.Routes.Include(x => x.BusStop).ThenInclude(x => x.Street).FirstOrDefaultAsync(x => x.Id == id);
+            var busStop = await _db.Routes.Include(x => x.BusStop)
+                .ThenInclude(x => x.Street).ThenInclude(x => x.House)
+                .FirstOrDefaultAsync(x => x.Id == id);
             if (busStop != null)
             {
                 return busStop;

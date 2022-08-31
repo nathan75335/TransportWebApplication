@@ -48,7 +48,7 @@ namespace TransportApp.Infrastructure.Repositories
 
         public async Task<Street> GetStreetByIdAsync(int id)
         {
-            var street  = await _db.Streets.FirstOrDefaultAsync(x => x.Id == id);
+            var street  = await _db.Streets.Include(x => x.House).FirstOrDefaultAsync(x => x.Id == id);
             if(street != null)
             {
                 return street;

@@ -7,7 +7,7 @@ using TransportApp.Domain;
 
 namespace TransportAppApplication.Repositories
 {
-    public interface IHouseRespository
+    public interface IHouseRepository
     {
         Task<House> CreateNewHouseAsync(House house);
 

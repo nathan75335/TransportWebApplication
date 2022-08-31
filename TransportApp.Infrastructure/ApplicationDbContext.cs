@@ -20,6 +20,7 @@ namespace TransportApp.Infrastructure
         public DbSet<BusStop> BusStops { get; set; }
 
         public DbSet<Route> Routes { get; set; }
-
+        
+        public DbSet<House> Houses { get; set; }
     }
 }
