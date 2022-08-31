@@ -1,5 +1,3 @@
-using TransportApp.Infrastructure.Services;
-using TransportApp.Application.Services;
 using TransportApp.Application.Repositories;
 using TransportApp.Infrastructure.Repositories;
 using TransportApp.Infrastructure;
@@ -9,7 +7,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddScoped<IServiceStreet, StreetService>();
 builder.Services.AddScoped<IStreetRepository, StreetRepository>();
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 

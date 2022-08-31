@@ -20,15 +20,16 @@ namespace TransportApp.Infrastructure.Repositories
         public async Task<Street> CreateNewStreetAsync(Street street)
         {
             await _db.Streets.AddAsync(street);
+            await _db.SaveChangesAsync();
             return street;
         }
 
-        public async Task<Street> DeleteStreetAsync(int id)
+        public async Task<Street> DeleteStreetAsync(Street street)
         {
-            var street = await _db.Streets.FindAsync(id);
             if(street != null)
             {
                  _db.Streets.Remove(street);
+                await _db.SaveChangesAsync();
 
                 return street;
             }
@@ -45,12 +46,22 @@ namespace TransportApp.Infrastructure.Repositories
             return null;
         }
 
-        public async Task<Street> UpdateStreetAsync(int id)
+        public async Task<Street> GetStreetByIdAsync(int id)
         {
-            var street = await _db.Streets.FindAsync(id);
+            var street  = await _db.Streets.FirstOrDefaultAsync(x => x.Id == id);
+            if(street != null)
+            {
+                return street;
+            }
+            return null;
+        }
+
+        public async Task<Street> UpdateStreetAsync(Street street)
+        {
             if (street != null)
             {
                 _db.Streets.Update(street);
+                await _db.SaveChangesAsync();
                 return street;
             }
             return null;

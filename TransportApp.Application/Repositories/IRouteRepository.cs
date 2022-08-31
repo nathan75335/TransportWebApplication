@@ -9,12 +9,14 @@ namespace TransportAppApplication.Repositories
 {
     public interface IRouteRepository
     {
-        Task<Route> CreateNewRouteAsync(Route street);
+        Task<Route> CreateNewRouteAsync(Route route);
 
         Task<List<Route>> GetListRouteAsync();
 
-        Task<Route> UpdateRouteAsync(int id);
+        Task<Route> UpdateRouteAsync(Route route);
 
-        Task<Route> DeleteRouteAsync(int id);
+        Task<Route> DeleteRouteAsync(Route route);
+
+        Task<Route> GetRouteByIdAsync(int id);
     }
 }

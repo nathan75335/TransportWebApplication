@@ -9,8 +9,10 @@ namespace TransportApp.Application.Repositories
 
         Task<List<Street>> GetListStreetAsync();
 
-        Task<Street> UpdateStreetAsync(int id);
+        Task<Street> UpdateStreetAsync(Street street);
 
-        Task<Street> DeleteStreetAsync(int id);
+        Task<Street> DeleteStreetAsync(Street street);
+
+        Task<Street> GetStreetByIdAsync(int id);
     }
 }

@@ -9,12 +9,14 @@ namespace TransportAppApplication.Repositories
 {
     public interface IBusStopRepository
     {
-        Task<BusStop> CreateNewBusStopAsync(BusStop street);
+        Task<BusStop> CreateNewBusStopAsync(BusStop busStop);
 
         Task<List<BusStop>> GetListBusStopAsync();
 
-        Task<BusStop> UpdateBusStopAsync(int id);
+        Task<BusStop> UpdateBusStopAsync(BusStop busStop);
 
-        Task<BusStop> DeleteBusStopAsync(int id);
+        Task<BusStop> DeleteBusStopAsync(BusStop busStop);
+
+        Task<BusStop> GetBusStopByIdAsync(int id);
     }
 }
