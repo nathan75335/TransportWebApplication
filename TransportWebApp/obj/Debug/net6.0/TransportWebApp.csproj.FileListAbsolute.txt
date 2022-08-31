@@ -68,7 +68,6 @@ C:\Users\josh4\OneDrive\Documents\TransportWebApp\obj\Debug\net6.0\TransportWebA
 C:\Users\josh4\OneDrive\Documents\TransportWebApp\obj\Debug\net6.0\ref\TransportWebApp.dll
 C:\Users\josh4\OneDrive\Bureau\File App Transport\TransportWebApp\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\josh4\OneDrive\Bureau\File App Transport\TransportWebApp\bin\Debug\net6.0\appsettings.json
-C:\Users\josh4\OneDrive\Bureau\File App Transport\TransportWebApp\bin\Debug\net6.0\TransportApp.Domain\bin\Debug\net6.0\TransportApp.Domain.deps.json
 C:\Users\josh4\OneDrive\Bureau\File App Transport\TransportWebApp\bin\Debug\net6.0\TransportApp.Domain\obj\project.assets.json
 C:\Users\josh4\OneDrive\Bureau\File App Transport\TransportWebApp\bin\Debug\net6.0\TransportApp.Domain\obj\TransportApp.Domain.csproj.nuget.dgspec.json
 C:\Users\josh4\OneDrive\Bureau\File App Transport\TransportWebApp\bin\Debug\net6.0\TransportWebApp.staticwebassets.runtime.json
