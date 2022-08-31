@@ -26,9 +26,10 @@ namespace TransportApp.Infrastructure.Services
          
         }
 
-        public async Task GetStreetByIdAsync(int id)
+        public async Task<List<Street>> GetListStreetAsync()
         {
-           await _streetRepository.GetStreetByIdAsync(id);
+           var streets = await _streetRepository.GetListStreetAsync();
+            return streets;
         }
 
         public async Task UpdateStreetAsync(int id)

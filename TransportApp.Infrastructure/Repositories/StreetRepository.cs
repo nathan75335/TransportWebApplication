@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -34,9 +35,9 @@ namespace TransportApp.Infrastructure.Repositories
             return null;
         }
 
-        public async Task<Street> GetStreetByIdAsync(int id)
+        public async Task<List<Street>> GetListStreetAsync()
         {
-            var street =await  _db.Streets.FindAsync(id);
+            var street = await  _db.Streets.ToListAsync();
             if(street != null)
             {
                 return street;

@@ -11,7 +11,7 @@ namespace TransportApp.Application.Services
     {
         Task<Street> CreateNewStreetAsync(Street street);
 
-        Task GetStreetByIdAsync(int id);
+        Task<List<Street>> GetListStreetAsync();
 
         Task UpdateStreetAsync(int id);
 

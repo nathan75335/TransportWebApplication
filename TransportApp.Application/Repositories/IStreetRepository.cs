@@ -7,7 +7,7 @@ namespace TransportApp.Application.Repositories
     {
         Task<Street>  CreateNewStreetAsync(Street street);
 
-        Task<Street> GetStreetByIdAsync(int id);
+        Task<List<Street>> GetListStreetAsync();
 
         Task<Street> UpdateStreetAsync(int id);
 
