@@ -29,14 +29,14 @@ namespace TransportApp.Infrastructure.Repositories
             if(busStop != null)
             {
                 _db.BusStops.Remove(busStop);
-                _db.SaveChanges();
+                await _db.SaveChangesAsync();
             }
             return null;
         }
 
         public async Task<List<BusStop>> GetListBusStopAsync()
         {
-            var busStops = await _db.BusStops.Include(x =>x.Street).ToListAsync();
+            var busStops = await _db.BusStops.Include(x => x.Street).ToListAsync();
             if(busStops != null)
             {
                 return busStops;
@@ -49,7 +49,7 @@ namespace TransportApp.Infrastructure.Repositories
             if (busStop != null)
             {
                 _db.BusStops.Update(busStop);
-                _db.SaveChanges();
+                await _db.SaveChangesAsync();
             }
             return null;
         }

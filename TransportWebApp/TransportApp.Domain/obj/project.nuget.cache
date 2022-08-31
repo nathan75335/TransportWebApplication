@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "t5lY8krjMNYI9KuZKYMS49ML2ndKlvuG34qUDsE/W3g0y8woYKQd9E3Q+CwC5IomxFIGYBonokUH3ceW3GiW2g==",
+  "dgSpecHash": "ha2LAg6T3TtKnBmAZME7WE5iuGMbjrju+HgAn1Jz+ZzG33VHWCbZtFoY6Rh/21TM83HM+qj6WjnYrn5Z7oVbWA==",
   "success": true,
   "projectFilePath": "C:\\Users\\josh4\\OneDrive\\Bureau\\File App Transport\\TransportWebApp\\TransportApp.Domain\\TransportApp.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\josh4\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.8\\microsoft.entityframeworkcore.abstractions.6.0.8.nupkg.sha512"
+  ],
   "logs": []
 }

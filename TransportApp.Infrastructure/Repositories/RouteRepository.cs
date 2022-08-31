@@ -29,7 +29,7 @@ namespace TransportApp.Infrastructure.Repositories
             if (route != null)
             {
                 _db.Routes.Remove(route);
-                _db.SaveChanges();
+                await _db.SaveChangesAsync();
             }
             return null;
         }
@@ -49,7 +49,7 @@ namespace TransportApp.Infrastructure.Repositories
             if (route != null)
             {
                 _db.Routes.Update(route);
-                _db.SaveChanges();
+                await _db.SaveChangesAsync();
             }
             return null;
         }

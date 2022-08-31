@@ -2,12 +2,16 @@ using TransportApp.Application.Repositories;
 using TransportApp.Infrastructure.Repositories;
 using TransportApp.Infrastructure;
 using Microsoft.EntityFrameworkCore;
+using TransportAppApplication.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IStreetRepository, StreetRepository>();
+builder.Services.AddScoped<IBusStopRepository, BusStopRepository>();
+builder.Services.AddScoped<IRouteRepository, RouteRepository>();
+
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 
