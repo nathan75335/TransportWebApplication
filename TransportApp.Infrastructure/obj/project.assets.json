@@ -195,14 +195,28 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "TransportAppApplication/1.0.0": {
+      "TransportApp.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.8",
+          "TransportApp.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TransportApp.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TransportApp.Application.dll": {}
+        }
+      },
+      "TransportApp.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "bin/placeholder/TransportAppApplication.dll": {}
+          "bin/placeholder/TransportApp.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/TransportAppApplication.dll": {}
+          "bin/placeholder/TransportApp.Domain.dll": {}
         }
       }
     }
@@ -531,16 +545,22 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "TransportAppApplication/1.0.0": {
+    "TransportApp.Application/1.0.0": {
       "type": "project",
-      "path": "../TransportApp.Application/TransportAppApplication.csproj",
-      "msbuildProject": "../TransportApp.Application/TransportAppApplication.csproj"
+      "path": "../TransportApp.Application/TransportApp.Application.csproj",
+      "msbuildProject": "../TransportApp.Application/TransportApp.Application.csproj"
+    },
+    "TransportApp.Domain/1.0.0": {
+      "type": "project",
+      "path": "../TransportApp.Domain/TransportApp.Domain.csproj",
+      "msbuildProject": "../TransportApp.Domain/TransportApp.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.EntityFrameworkCore >= 6.0.8",
-      "TransportAppApplication >= 1.0.0"
+      "TransportApp.Application >= 1.0.0",
+      "TransportApp.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -550,11 +570,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\josh4\\OneDrive\\Bureau\\File App Transport\\TransportApp.Infrastructure\\TransportApp.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\josh4\\OneDrive\\Bureau\\Patrick\\TransportApp.Infrastructure\\TransportApp.Infrastructure.csproj",
       "projectName": "TransportApp.Infrastructure",
-      "projectPath": "C:\\Users\\josh4\\OneDrive\\Bureau\\File App Transport\\TransportApp.Infrastructure\\TransportApp.Infrastructure.csproj",
+      "projectPath": "C:\\Users\\josh4\\OneDrive\\Bureau\\Patrick\\TransportApp.Infrastructure\\TransportApp.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\josh4\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\josh4\\OneDrive\\Bureau\\File App Transport\\TransportApp.Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\josh4\\OneDrive\\Bureau\\Patrick\\TransportApp.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -575,8 +595,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\josh4\\OneDrive\\Bureau\\File App Transport\\TransportApp.Application\\TransportAppApplication.csproj": {
-              "projectPath": "C:\\Users\\josh4\\OneDrive\\Bureau\\File App Transport\\TransportApp.Application\\TransportAppApplication.csproj"
+            "C:\\Users\\josh4\\OneDrive\\Bureau\\Patrick\\TransportApp.Application\\TransportApp.Application.csproj": {
+              "projectPath": "C:\\Users\\josh4\\OneDrive\\Bureau\\Patrick\\TransportApp.Application\\TransportApp.Application.csproj"
+            },
+            "C:\\Users\\josh4\\OneDrive\\Bureau\\Patrick\\TransportApp.Domain\\TransportApp.Domain.csproj": {
+              "projectPath": "C:\\Users\\josh4\\OneDrive\\Bureau\\Patrick\\TransportApp.Domain\\TransportApp.Domain.csproj"
             }
           }
         }

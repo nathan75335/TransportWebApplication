@@ -5,7 +5,7 @@ namespace TransportApp.Application.Repositories
 {
     public interface IStreetRepository
     {
-        Task<Street>  CreateNewStreetAsync(Street street);
+        Task<Street> CreateNewStreetAsync(Street street);
 
         Task<List<Street>> GetListStreetAsync();
 

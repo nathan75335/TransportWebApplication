@@ -12,15 +12,15 @@ namespace TransportApp.Infrastructure
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
-                Database.EnsureCreated();
+            Database.EnsureCreated();
         }
 
-        public DbSet <Street> Streets { get; set; }
-        
+        public DbSet<Street> Streets { get; set; }
+
         public DbSet<BusStop> BusStops { get; set; }
 
         public DbSet<Route> Routes { get; set; }
-        
+
         public DbSet<House> Houses { get; set; }
     }
 }

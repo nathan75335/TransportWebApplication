@@ -9,7 +9,8 @@
       "TransportApp.Infrastructure/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.8",
-          "TransportAppApplication": "1.0.0"
+          "TransportApp.Application": "1.0.0",
+          "TransportApp.Domain": "1.0.0"
         },
         "runtime": {
           "TransportApp.Infrastructure.dll": {}
@@ -144,20 +145,18 @@
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
-      "TransportApp.Domain/1.0.0": {
+      "TransportApp.Application/1.0.0": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Abstractions": "6.0.8"
-        },
-        "runtime": {
-          "TransportApp.Domain.dll": {}
-        }
-      },
-      "TransportAppApplication/1.0.0": {
-        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.8",
           "TransportApp.Domain": "1.0.0"
         },
         "runtime": {
-          "TransportAppApplication.dll": {}
+          "TransportApp.Application.dll": {}
+        }
+      },
+      "TransportApp.Domain/1.0.0": {
+        "runtime": {
+          "TransportApp.Domain.dll": {}
         }
       }
     }
@@ -266,12 +265,12 @@
       "path": "system.runtime.compilerservices.unsafe/6.0.0",
       "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
     },
-    "TransportApp.Domain/1.0.0": {
+    "TransportApp.Application/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "TransportAppApplication/1.0.0": {
+    "TransportApp.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

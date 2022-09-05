@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TransportApp.Domain;
 
-namespace TransportAppApplication.Repositories
+namespace TransportApp.Application.Repositories
 {
     public interface IHouseRepository
     {

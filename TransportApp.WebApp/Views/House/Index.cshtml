@@ -1,0 +1,50 @@
+﻿@model List<TransportApp.Domain.House>
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary">Houses </h2>
+        </div>
+        <div class="col-6 d-flex p-2 justify-content-end">
+            <a asp-controller="House" asp-action="Create" class="btn btn-info d-flex p-2 justify-content-end">
+                <i class="bi bi-plus-circle pl-1"></i>&nbsp;Add New Street
+            </a>
+            
+        </div>
+    </div>
+</div>
+<hr class="bg-primary"/>
+<table class="table table-bordered table-striped" style="width:100%;">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name Of House</th>
+            <th>Number Of House</th>
+        </tr>
+    </thead>
+    <tbody >
+        @{
+            int i = 1;
+        }
+        @foreach(var house in Model){
+            <tr>
+                <td >@i</td>
+                <td >@house.Name</td>
+                <td >@house.Number</td>
+                <td>
+                    <div class="w-75 btn-group" role="group">
+                        <a asp-controller="House" asp-action="Edit" class="btn btn-primary" asp-route-id="@house.Id">
+                            <i class="bi bi-pencil-square"></i>&nbsp;Edit
+                        </a>
+                        <a asp-controller="House" asp-action="Delete" class="btn btn-danger" asp-route-id="@house.Id">
+                            <i class="bi bi-trash3-fill"></i>&nbsp;Delete
+                        </a>
+                    </div>
+                </td>
+            </tr>
+            i++;
+        }
+    </tbody>
+</table>

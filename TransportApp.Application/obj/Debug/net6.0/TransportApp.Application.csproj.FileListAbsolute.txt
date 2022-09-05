@@ -1,0 +1,15 @@
+C:\Users\josh4\OneDrive\Bureau\Patrick\TransportApp.Application\bin\Debug\net6.0\TransportApp.Application.deps.json
+C:\Users\josh4\OneDrive\Bureau\Patrick\TransportApp.Application\bin\Debug\net6.0\TransportApp.Application.dll
+C:\Users\josh4\OneDrive\Bureau\Patrick\TransportApp.Application\bin\Debug\net6.0\TransportApp.Application.pdb
+C:\Users\josh4\OneDrive\Bureau\Patrick\TransportApp.Application\bin\Debug\net6.0\TransportApp.Domain.dll
+C:\Users\josh4\OneDrive\Bureau\Patrick\TransportApp.Application\bin\Debug\net6.0\TransportApp.Domain.pdb
+C:\Users\josh4\OneDrive\Bureau\Patrick\TransportApp.Application\obj\Debug\net6.0\TransportApp.Application.csproj.AssemblyReference.cache
+C:\Users\josh4\OneDrive\Bureau\Patrick\TransportApp.Application\obj\Debug\net6.0\TransportApp.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\josh4\OneDrive\Bureau\Patrick\TransportApp.Application\obj\Debug\net6.0\TransportApp.Application.AssemblyInfoInputs.cache
+C:\Users\josh4\OneDrive\Bureau\Patrick\TransportApp.Application\obj\Debug\net6.0\TransportApp.Application.AssemblyInfo.cs
+C:\Users\josh4\OneDrive\Bureau\Patrick\TransportApp.Application\obj\Debug\net6.0\TransportApp.Application.csproj.CoreCompileInputs.cache
+C:\Users\josh4\OneDrive\Bureau\Patrick\TransportApp.Application\obj\Debug\net6.0\TransportApp.Application.csproj.CopyComplete
+C:\Users\josh4\OneDrive\Bureau\Patrick\TransportApp.Application\obj\Debug\net6.0\TransportApp.Application.dll
+C:\Users\josh4\OneDrive\Bureau\Patrick\TransportApp.Application\obj\Debug\net6.0\refint\TransportApp.Application.dll
+C:\Users\josh4\OneDrive\Bureau\Patrick\TransportApp.Application\obj\Debug\net6.0\TransportApp.Application.pdb
+C:\Users\josh4\OneDrive\Bureau\Patrick\TransportApp.Application\obj\Debug\net6.0\ref\TransportApp.Application.dll

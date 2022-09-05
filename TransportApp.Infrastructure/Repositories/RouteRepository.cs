@@ -1,11 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using TransportApp.Application.Repositories;
 using TransportApp.Domain;
-using TransportAppApplication.Repositories;
 
 namespace TransportApp.Infrastructure.Repositories
 {
@@ -36,8 +31,7 @@ namespace TransportApp.Infrastructure.Repositories
 
         public async Task<List<Route>> GetListRouteAsync()
         {
-            var routes = await _db.Routes.Include(x => x.BusStop)
-                .ThenInclude(x => x.Street).ThenInclude(x => x.House)
+            var routes = await _db.Routes.Include(x => x.BusStops)
                 .ToListAsync();
             if (routes != null)
             {
@@ -58,8 +52,7 @@ namespace TransportApp.Infrastructure.Repositories
 
         public async Task<Route> GetRouteByIdAsync(int id)
         {
-            var busStop = await _db.Routes.Include(x => x.BusStop)
-                .ThenInclude(x => x.Street).ThenInclude(x => x.House)
+            var busStop = await _db.Routes.Include(x => x.BusStops)
                 .FirstOrDefaultAsync(x => x.Id == id);
             if (busStop != null)
             {

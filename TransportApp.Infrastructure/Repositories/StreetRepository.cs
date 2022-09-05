@@ -15,7 +15,7 @@ namespace TransportApp.Infrastructure.Repositories
 
         public StreetRepository(ApplicationDbContext db)
         {
-                _db = db;
+            _db = db;
         }
         public async Task<Street> CreateNewStreetAsync(Street street)
         {
@@ -26,9 +26,9 @@ namespace TransportApp.Infrastructure.Repositories
 
         public async Task<Street> DeleteStreetAsync(Street street)
         {
-            if(street != null)
+            if (street != null)
             {
-                 _db.Streets.Remove(street);
+                _db.Streets.Remove(street);
                 await _db.SaveChangesAsync();
 
                 return street;
@@ -38,8 +38,8 @@ namespace TransportApp.Infrastructure.Repositories
 
         public async Task<List<Street>> GetListStreetAsync()
         {
-            var street = await  _db.Streets.ToListAsync();
-            if(street != null)
+            var street = await _db.Streets.Include(x => x.Houses).Include(x => x.BusStop).ToListAsync();
+            if (street != null)
             {
                 return street;
             }
@@ -48,8 +48,8 @@ namespace TransportApp.Infrastructure.Repositories
 
         public async Task<Street> GetStreetByIdAsync(int id)
         {
-            var street  = await _db.Streets.Include(x => x.House).FirstOrDefaultAsync(x => x.Id == id);
-            if(street != null)
+            var street = await _db.Streets.Include(x => x.Houses).Include(x => x.BusStop).FirstOrDefaultAsync(x => x.Id == id);
+            if (street != null)
             {
                 return street;
             }

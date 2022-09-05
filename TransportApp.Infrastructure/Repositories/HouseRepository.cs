@@ -4,8 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TransportApp.Application.Repositories;
 using TransportApp.Domain;
-using TransportAppApplication.Repositories;
 
 namespace TransportApp.Infrastructure.Repositories
 {
@@ -38,7 +38,7 @@ namespace TransportApp.Infrastructure.Repositories
 
         public async Task<House> GetHouseByIdAsync(int id)
         {
-            var houses = await _db.Houses.FirstOrDefaultAsync(x => x.Id == id);
+            var houses = await _db.Houses.Include(x => x.Street).FirstOrDefaultAsync(x => x.Id == id);
             if (houses != null)
             {
                 return houses;
@@ -48,7 +48,7 @@ namespace TransportApp.Infrastructure.Repositories
 
         public async Task<List<House>> GetListHouseAsync()
         {
-            var houses = await _db.Houses.ToListAsync();
+            var houses = await _db.Houses.Include(x => x.Street).ToListAsync();
             if (houses != null)
             {
                 return houses;

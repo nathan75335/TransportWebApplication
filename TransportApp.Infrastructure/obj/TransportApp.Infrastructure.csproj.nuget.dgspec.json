@@ -1,17 +1,85 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\josh4\\OneDrive\\Bureau\\File App Transport\\TransportApp.Infrastructure\\TransportApp.Infrastructure.csproj": {}
+    "C:\\Users\\josh4\\OneDrive\\Bureau\\Patrick\\TransportApp.Infrastructure\\TransportApp.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\josh4\\OneDrive\\Bureau\\File App Transport\\TransportApp.Application\\TransportAppApplication.csproj": {
+    "C:\\Users\\josh4\\OneDrive\\Bureau\\Patrick\\TransportApp.Application\\TransportApp.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\josh4\\OneDrive\\Bureau\\File App Transport\\TransportApp.Application\\TransportAppApplication.csproj",
-        "projectName": "TransportAppApplication",
-        "projectPath": "C:\\Users\\josh4\\OneDrive\\Bureau\\File App Transport\\TransportApp.Application\\TransportAppApplication.csproj",
+        "projectUniqueName": "C:\\Users\\josh4\\OneDrive\\Bureau\\Patrick\\TransportApp.Application\\TransportApp.Application.csproj",
+        "projectName": "TransportApp.Application",
+        "projectPath": "C:\\Users\\josh4\\OneDrive\\Bureau\\Patrick\\TransportApp.Application\\TransportApp.Application.csproj",
         "packagesPath": "C:\\Users\\josh4\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\josh4\\OneDrive\\Bureau\\File App Transport\\TransportApp.Application\\obj\\",
+        "outputPath": "C:\\Users\\josh4\\OneDrive\\Bureau\\Patrick\\TransportApp.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\josh4\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\josh4\\OneDrive\\Bureau\\Patrick\\TransportApp.Domain\\TransportApp.Domain.csproj": {
+                "projectPath": "C:\\Users\\josh4\\OneDrive\\Bureau\\Patrick\\TransportApp.Domain\\TransportApp.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\josh4\\OneDrive\\Bureau\\Patrick\\TransportApp.Domain\\TransportApp.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\josh4\\OneDrive\\Bureau\\Patrick\\TransportApp.Domain\\TransportApp.Domain.csproj",
+        "projectName": "TransportApp.Domain",
+        "projectPath": "C:\\Users\\josh4\\OneDrive\\Bureau\\Patrick\\TransportApp.Domain\\TransportApp.Domain.csproj",
+        "packagesPath": "C:\\Users\\josh4\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\josh4\\OneDrive\\Bureau\\Patrick\\TransportApp.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -62,14 +130,14 @@
         }
       }
     },
-    "C:\\Users\\josh4\\OneDrive\\Bureau\\File App Transport\\TransportApp.Infrastructure\\TransportApp.Infrastructure.csproj": {
+    "C:\\Users\\josh4\\OneDrive\\Bureau\\Patrick\\TransportApp.Infrastructure\\TransportApp.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\josh4\\OneDrive\\Bureau\\File App Transport\\TransportApp.Infrastructure\\TransportApp.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\josh4\\OneDrive\\Bureau\\Patrick\\TransportApp.Infrastructure\\TransportApp.Infrastructure.csproj",
         "projectName": "TransportApp.Infrastructure",
-        "projectPath": "C:\\Users\\josh4\\OneDrive\\Bureau\\File App Transport\\TransportApp.Infrastructure\\TransportApp.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\josh4\\OneDrive\\Bureau\\Patrick\\TransportApp.Infrastructure\\TransportApp.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\josh4\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\josh4\\OneDrive\\Bureau\\File App Transport\\TransportApp.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\josh4\\OneDrive\\Bureau\\Patrick\\TransportApp.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -90,8 +158,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\josh4\\OneDrive\\Bureau\\File App Transport\\TransportApp.Application\\TransportAppApplication.csproj": {
-                "projectPath": "C:\\Users\\josh4\\OneDrive\\Bureau\\File App Transport\\TransportApp.Application\\TransportAppApplication.csproj"
+              "C:\\Users\\josh4\\OneDrive\\Bureau\\Patrick\\TransportApp.Application\\TransportApp.Application.csproj": {
+                "projectPath": "C:\\Users\\josh4\\OneDrive\\Bureau\\Patrick\\TransportApp.Application\\TransportApp.Application.csproj"
+              },
+              "C:\\Users\\josh4\\OneDrive\\Bureau\\Patrick\\TransportApp.Domain\\TransportApp.Domain.csproj": {
+                "projectPath": "C:\\Users\\josh4\\OneDrive\\Bureau\\Patrick\\TransportApp.Domain\\TransportApp.Domain.csproj"
               }
             }
           }
