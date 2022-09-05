@@ -3136,25 +3136,11 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "TransportApp.Domain/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Abstractions": "6.0.8"
-        },
-        "compile": {
-          "bin/placeholder/TransportApp.Domain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/TransportApp.Domain.dll": {}
-        }
-      },
       "TransportApp.Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.8",
-          "TransportApp.Domain": "1.0.0",
           "TransportAppApplication": "1.0.0"
         },
         "compile": {
@@ -3167,9 +3153,6 @@
       "TransportAppApplication/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "TransportApp.Domain": "1.0.0"
-        },
         "compile": {
           "bin/placeholder/TransportAppApplication.dll": {}
         },
@@ -9693,11 +9676,6 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "TransportApp.Domain/1.0.0": {
-      "type": "project",
-      "path": "TransportApp.Domain/TransportApp.Domain.csproj",
-      "msbuildProject": "TransportApp.Domain/TransportApp.Domain.csproj"
-    },
     "TransportApp.Infrastructure/1.0.0": {
       "type": "project",
       "path": "../TransportApp.Infrastructure/TransportApp.Infrastructure.csproj",
@@ -9714,9 +9692,7 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.8",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.8",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.8",
-      "Microsoft.VisualStudio.Web.CodeGenerators.Mvc >= 6.0.8",
       "Swashbuckle.AspNetCore >= 6.3.0",
-      "TransportApp.Domain >= 1.0.0",
       "TransportApp.Infrastructure >= 1.0.0"
     ]
   },
@@ -9752,9 +9728,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\josh4\\OneDrive\\Bureau\\File App Transport\\TransportApp.Domain\\TransportApp.Domain.csproj": {
-              "projectPath": "C:\\Users\\josh4\\OneDrive\\Bureau\\File App Transport\\TransportApp.Domain\\TransportApp.Domain.csproj"
-            },
             "C:\\Users\\josh4\\OneDrive\\Bureau\\File App Transport\\TransportApp.Infrastructure\\TransportApp.Infrastructure.csproj": {
               "projectPath": "C:\\Users\\josh4\\OneDrive\\Bureau\\File App Transport\\TransportApp.Infrastructure\\TransportApp.Infrastructure.csproj"
             }
@@ -9782,10 +9755,6 @@
             "version": "[6.0.8, )"
           },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-            "target": "Package",
-            "version": "[6.0.8, )"
-          },
-          "Microsoft.VisualStudio.Web.CodeGenerators.Mvc": {
             "target": "Package",
             "version": "[6.0.8, )"
           },

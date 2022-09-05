@@ -195,25 +195,9 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "TransportApp.Domain/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Abstractions": "6.0.8"
-        },
-        "compile": {
-          "bin/placeholder/TransportApp.Domain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/TransportApp.Domain.dll": {}
-        }
-      },
       "TransportAppApplication/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "TransportApp.Domain": "1.0.0"
-        },
         "compile": {
           "bin/placeholder/TransportAppApplication.dll": {}
         },
@@ -547,11 +531,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "TransportApp.Domain/1.0.0": {
-      "type": "project",
-      "path": "../TransportWebApp/TransportApp.Domain/TransportApp.Domain.csproj",
-      "msbuildProject": "../TransportWebApp/TransportApp.Domain/TransportApp.Domain.csproj"
-    },
     "TransportAppApplication/1.0.0": {
       "type": "project",
       "path": "../TransportApp.Application/TransportAppApplication.csproj",
@@ -561,7 +540,6 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.EntityFrameworkCore >= 6.0.8",
-      "TransportApp.Domain >= 1.0.0",
       "TransportAppApplication >= 1.0.0"
     ]
   },
@@ -599,9 +577,6 @@
           "projectReferences": {
             "C:\\Users\\josh4\\OneDrive\\Bureau\\File App Transport\\TransportApp.Application\\TransportAppApplication.csproj": {
               "projectPath": "C:\\Users\\josh4\\OneDrive\\Bureau\\File App Transport\\TransportApp.Application\\TransportAppApplication.csproj"
-            },
-            "C:\\Users\\josh4\\OneDrive\\Bureau\\File App Transport\\TransportApp.Domain\\TransportApp.Domain.csproj": {
-              "projectPath": "C:\\Users\\josh4\\OneDrive\\Bureau\\File App Transport\\TransportApp.Domain\\TransportApp.Domain.csproj"
             }
           }
         }

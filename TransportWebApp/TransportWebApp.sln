@@ -9,8 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TransportAppApplication", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TransportApp.Infrastructure", "..\TransportApp.Infrastructure\TransportApp.Infrastructure.csproj", "{30CA644F-9B1B-42B2-ACCA-7EBC738A577C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TransportApp.Domain", "..\TransportApp.Domain\TransportApp.Domain.csproj", "{61CD47E6-9F26-4555-B499-F42E92125FEB}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,10 +27,6 @@ Global
 		{30CA644F-9B1B-42B2-ACCA-7EBC738A577C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30CA644F-9B1B-42B2-ACCA-7EBC738A577C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30CA644F-9B1B-42B2-ACCA-7EBC738A577C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{61CD47E6-9F26-4555-B499-F42E92125FEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{61CD47E6-9F26-4555-B499-F42E92125FEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{61CD47E6-9F26-4555-B499-F42E92125FEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{61CD47E6-9F26-4555-B499-F42E92125FEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

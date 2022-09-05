@@ -6,9 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\TransportApp.Domain\TransportApp.Domain.csproj" />
-    <ProjectReference Include="..\TransportWebApp\TransportApp.Domain\TransportApp.Domain.csproj" />
-  </ItemGroup>
-
 </Project>
